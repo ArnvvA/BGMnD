@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "MyCustomFont";  /* Name you will use in CSS */
+    src: url("fonts\TTF\dogica.ttf") format("truetype");  /* Ensure correct path */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "MyCustomFont";
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    -webkit-app-region: drag;
+}
+
+.player-container {
+    background-color: rgba(209, 179, 255, 0.9);;
+    padding: 26px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 86%;
+    height: 86%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-cover img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.song-info p {
+    font-size: 18px;
+    color: #333;
+}
+
+#progress-bar {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: none;
+    cursor: pointer;
+    
+    outline: none;
+
+}
+
+/* button img {
+    width: 64px;  
+    height: 32px;
+    image-rendering: pixelated; 
+}*/
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+#play-pause {
+    background-image: url('./assets/play.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+button, input {
+    -webkit-app-region: no-drag;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
